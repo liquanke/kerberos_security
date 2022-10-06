@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.loginController">
+   <children>
+      <Button fx:id="but_register" layoutX="191.0" layoutY="294.0" mnemonicParsing="false" onAction="#registerEvent" text="注册">
+         <font>
+            <Font name="Microsoft YaHei" size="15.0" />
+         </font></Button>
+      <TextField fx:id="text_name" layoutX="115.0" layoutY="159.0" promptText="用户名">
+         <font>
+            <Font name="Microsoft YaHei" size="15.0" />
+         </font></TextField>
+      <PasswordField fx:id="text_password" layoutX="115.0" layoutY="227.0" promptText="密码">
+         <font>
+            <Font name="Microsoft YaHei" size="15.0" />
+         </font></PasswordField>
+      <Label layoutX="26.0" layoutY="34.0" text="welcome to">
+         <font>
+            <Font name="Microsoft YaHei Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="but_login" layoutX="90.0" layoutY="294.0" mnemonicParsing="false" onAction="#loginEvent" text="登录">
+         <font>
+            <Font name="Microsoft YaHei" size="15.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="textarea" layoutX="436.0" layoutY="114.0" prefHeight="214.0" prefWidth="340.0" />
+      <Separator layoutX="401.0" orientation="VERTICAL" prefHeight="404.0" prefWidth="15.0" />
+      <Label layoutX="463.0" layoutY="73.0" text="流程明密文展示">
+         <font>
+            <Font name="Microsoft YaHei Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="172.0" layoutY="83.0" text="共享网盘">
+         <font>
+            <Font name="Microsoft YaHei Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="but_close" layoutX="292.0" layoutY="294.0" mnemonicParsing="false" onAction="#closeEvent" text="退出">
+         <font>
+            <Font name="Microsoft YaHei" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

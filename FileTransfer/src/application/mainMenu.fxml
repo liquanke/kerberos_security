@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.loginController">
+   <children>
+      <Button fx:id="but_up" layoutX="28.0" layoutY="34.0" mnemonicParsing="false" onAction="#upEvent" text="上传">
+         <font>
+            <Font name="Microsoft YaHei" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_del" layoutX="78.0" layoutY="34.0" mnemonicParsing="false" onAction="#delEvent" text="删除">
+         <font>
+            <Font name="Microsoft YaHei" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_re" layoutX="128.0" layoutY="34.0" mnemonicParsing="false" onAction="#refreshEvent" text="刷新">
+         <font>
+            <Font name="Microsoft YaHei" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="bot_down" layoutX="239.0" layoutY="34.0" mnemonicParsing="false" onAction="#downEvent" text="下载">
+         <font>
+            <Font name="Microsoft YaHei" size="15.0" />
+         </font>
+      </Button>
+      <ListView fx:id="list" layoutX="32.0" layoutY="86.0" prefHeight="223.0" prefWidth="261.0" />
+      <ProgressBar fx:id="progress_1" layoutX="32.0" layoutY="331.0" prefHeight="23.0" prefWidth="261.0" progress="0.0" />
+      <Label layoutX="518.0" layoutY="37.0" prefHeight="27.0" prefWidth="97.0" text="传输内容">
+         <font>
+            <Font name="Microsoft YaHei" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="514.0" layoutY="76.0" text="加密后的内容：">
+         <font>
+            <Font name="Microsoft YaHei" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="514.0" layoutY="198.0" text="解密出的内容：">
+         <font>
+            <Font name="Microsoft YaHei" size="15.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="textarea_1" layoutX="379.0" layoutY="96.0" prefHeight="97.0" prefWidth="375.0" />
+      <TextArea fx:id="textarea_2" layoutX="379.0" layoutY="218.0" prefHeight="97.0" prefWidth="375.0" />
+   </children>
+</AnchorPane>
